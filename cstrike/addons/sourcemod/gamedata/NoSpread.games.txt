@@ -1,0 +1,16 @@
+"Games"
+{
+	"cstrike"
+	{
+		"Signatures"
+		{
+			"FX_FireBullets"
+			{
+				"library"		"server"
+				"windows"		"\x55\x8B\xEC\x81\xEC\x20\x02\x00\x00\x53\x56"
+				"linux"			"@_Z14FX_FireBulletsiRK6VectorRK6QAngleiiifff"
+				"mac"			"@_Z14FX_FireBulletsiRK6VectorRK6QAngleiiifff"
+			}
+		}
+	}
+}
