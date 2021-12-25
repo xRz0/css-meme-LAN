@@ -72,7 +72,7 @@ public void OnPluginStart()
 
 	mp_timelimit = FindConVar("mp_timelimit");
 	mp_timelimit.AddChangeHook(OnCvarChange);
-
+	KEKList = false;
 	for( int i = 1; i <= MaxClients; i++ )
 	{
 		if( IsClientInGame( i ))
@@ -94,7 +94,6 @@ public void OnMapStart()
 	PrecacheModel("editor/info_target.vmt", true);
 	AddMapSpawns();
 
-	KEKList = false;
 	GetCurrentMap(curmap, sizeof(curmap));
 	char fileBuffer[156];
 	if (!DirExists("temp"))
@@ -120,8 +119,6 @@ public void OnCvarChange(ConVar convar, const char[] oldValue, const char[] newV
 
 public void OnClientCookiesCached(int client)
 {
-	KEKList = GetClientCookieBool(client, g_hCookieMList);
-
 	char cookieValue[8];
 
 	GetClientCookie(client, COOKIE_Clienthideprop, cookieValue, sizeof(cookieValue));
@@ -430,6 +427,9 @@ public Action MapList(int client, int args)
 		bool refreshed = false;
 		if(AreClientCookiesCached(client))
 		{
+			char cookieValue[8];
+			GetClientCookie(client, g_hCookieMList, cookieValue, sizeof(cookieValue));
+			KEKList =  view_as<bool>(StringToInt(cookieValue));
 			if(!KEKList)
 			{
 				//KEK
@@ -476,7 +476,7 @@ public Action MapList(int client, int args)
 					WriteFileLine(MOTDFile, "</html>");
 					CloseHandle(MOTDFile);
 					KEKList = true;
-					SetClientCookieBool(client, g_hCookieMList, KEKList);
+					SetCookie(client, g_hCookieMList, KEKList);
 				}
 				else
 				{
@@ -489,7 +489,7 @@ public Action MapList(int client, int args)
 					WriteFileLine(MOTDFile, "</html>");
 					CloseHandle(MOTDFile);
 					KEKList = true;
-					SetClientCookieBool(client, g_hCookieMList, KEKList);
+					SetCookie(client, g_hCookieMList, KEKList);
 				}
 				refreshed = true;
 				PrintToChatAll("You will see Acer's maplist in your MOTD after the next cs:s start!");
@@ -709,23 +709,6 @@ stock void SetCookie(int client, Handle hCookie, int n)
 	SetClientCookie(client, hCookie, strCookie);
 }
 
-//PaxPlay
-stock bool GetClientCookieBool(int client, Handle cookie)
-{
-	char sValue[8];
-	GetClientCookie(client, g_hCookieMList, sValue, sizeof(sValue));
-	
-	return (sValue[0] != '\0' && StringToInt(sValue));
-}
-
-stock void SetClientCookieBool(int client, Handle cookie, bool value)
-{
-	char sValue[8];
-	IntToString(value, sValue, sizeof(sValue));
-	
-	SetClientCookie(client, cookie, sValue);
-}
-
 public Action OnVGUIMenuPreSent(UserMsg vguiMessage, BfRead buffer, const int[] players, int nPlayers, bool reliable, bool init) 
 {
 	char name[128];
@@ -736,6 +719,8 @@ public Action OnVGUIMenuPreSent(UserMsg vguiMessage, BfRead buffer, const int[] 
 	return Plugin_Continue;
 }
 
+int teamx;
+
 public Action Autojoin( Handle hTimer, int client )
 {
 	if ( (client = GetClientOfUserId( client )) > 0 && IsClientInGame( client ) )
@@ -744,12 +729,29 @@ public Action Autojoin( Handle hTimer, int client )
 		{
 			FakeClientCommand(client, "joingame");
 			ShowVGUIPanel(client, "team",_,false);
-			FakeClientCommand(client,"jointeam %d", GetRandomInt(2,3));
+			teamx = GetRandomInt(2,3);
+			FakeClientCommand(client,"jointeam %d", teamx);
+			CreateTimer(0.1, JoinChecK, client);
 		}
 	}
 	return Plugin_Handled;
 }
 
+public Action JoinChecK(Handle timer, int client )
+{
+	if(!IsClientInGame(client))
+		return Plugin_Stop;
+
+	if(!IsPlayerAlive(client))
+	{
+		if(teamx==3)
+			FakeClientCommand(client,"jointeam 2");
+
+		else
+			FakeClientCommand(client,"jointeam 3");
+	}
+	return Plugin_Handled;
+}
 
 void AddMapSpawns() 
 {
@@ -778,12 +780,23 @@ void AddMapSpawns()
 		if(spawnzz==2)
 		{
 			position[2] += 4.0;
-			int iEnt = CreateEntityByName("info_player_counterterrorist");
+			int iEnt = CreateEntityByName("info_player_terrorist");
 			if (DispatchSpawn(iEnt))
 			{
 				TeleportEntity(iEnt, position, NULL_VECTOR, NULL_VECTOR);
 			}
 
+			iEnt = CreateEntityByName("info_player_terrorist");
+			if (DispatchSpawn(iEnt))
+			{
+				TeleportEntity(iEnt, position, NULL_VECTOR, NULL_VECTOR);
+			}
+
+			iEnt = CreateEntityByName("info_player_counterterrorist");
+			if (DispatchSpawn(iEnt))
+			{
+				TeleportEntity(iEnt, position, NULL_VECTOR, NULL_VECTOR);
+			}
 			iEnt = CreateEntityByName("info_player_counterterrorist");
 			if (DispatchSpawn(iEnt))
 			{
@@ -832,7 +845,19 @@ void AddMapSpawns()
 		if(needspawn)
 		{
 			position[2] += 4.0;
-			int iEnt = CreateEntityByName("info_player_counterterrorist");
+			int iEnt = CreateEntityByName("info_player_terrorist");
+			if (DispatchSpawn(iEnt))
+			{
+				TeleportEntity(iEnt, position, NULL_VECTOR, NULL_VECTOR);
+			}
+
+			iEnt = CreateEntityByName("info_player_terrorist");
+			if (DispatchSpawn(iEnt))
+			{
+				TeleportEntity(iEnt, position, NULL_VECTOR, NULL_VECTOR);
+			}
+
+			iEnt = CreateEntityByName("info_player_counterterrorist");
 			if (DispatchSpawn(iEnt))
 			{
 				TeleportEntity(iEnt, position, NULL_VECTOR, NULL_VECTOR);

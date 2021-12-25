@@ -1641,16 +1641,16 @@ void UpdateReplayInfo(int client, int style, float time, int track)
 		if(strlen(sWeapon) == 0)
 		{
 			int iWeapon = GetEntPropEnt(client, Prop_Data, "m_hActiveWeapon");
-			char kekweapon[32];
-			GetEdictClassname(iWeapon, kekweapon, 32);
-			if(!StrEqual(kekweapon, "weapon_deagle",false))
+			if(iWeapon != -1 && IsValidEntity(iWeapon))
 			{
-				if(iWeapon != -1 && IsValidEntity(iWeapon))
+				char kekweapon[32];
+				GetEdictClassname(iWeapon, kekweapon, 32);
+				if(!StrEqual(kekweapon, "weapon_deagle",false))
 				{
 					CS_DropWeapon(client, iWeapon, false);
 					AcceptEntityInput(iWeapon, "Kill");
+					GivePlayerItem(client, "weapon_deagle");
 				}
-				GivePlayerItem(client, "weapon_deagle");
 			}
 		}
 		if(gEV_Type != Engine_TF2 && strlen(sWeapon) > 0)
