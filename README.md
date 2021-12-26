@@ -284,14 +284,14 @@ To enable Wrsj you need to own a SJ api key ( you can get one from Tony )!
 
 ## JHUD commands:
 - sm_jhud - Opens the JHUD main menu
-- sm_over80 - Set your own color!
-- sm_under60 - Set your own color!
-- sm_under70 - Set your own color!
-- sm_under80 - Set your own color!
-- sm_speedcolor - Set your own color!
-- sm_speedgain - Set your own color!
-- sm_speedloss - Set your own color!
-- sm_topleft - Set your own color!
+- sm_over80 - Set your own over 80 JHUD color!
+- sm_under60 - Set your own under 60 JHUD color!
+- sm_under70 - Set your own under 70 JHUD color!
+- sm_under80 - Set your own under 80 JHUD color!
+- sm_speedcolor - Set your own Speedometer color!
+- sm_speedgain - Set your own Speedometer gain color!
+- sm_speedloss - Set your own Speedometer loss color!
+- sm_topleft - Set your own top left hud color!
 - sm_tagcolor - Change tag color to a specified hexadecimal value.
 
 
