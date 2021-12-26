@@ -33,7 +33,7 @@
 To enable Wrsj you need to own a SJ api key ( you can get one from Tony )!
 > sj_api_key "YOUR API KEY"
 
-## To enable Twitch you need to have a twitch oauth key! You can get one from [here](https://twitchapps.com/tmi/).
+## To enable the Twitch plugin you need to have a twitch oauth key! You can get one from [here](https://twitchapps.com/tmi/).
 - TTV CVARS:
 
 > ttv_auth_username 'YOUR TWITCH USERNAME'
