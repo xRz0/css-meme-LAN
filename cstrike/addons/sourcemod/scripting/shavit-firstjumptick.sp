@@ -9,13 +9,15 @@
 #pragma semicolon 1
 
 Handle gH_FirstJumpTickCookie;
+Handle gH_MsgCookie;
 Handle gH_CookieSet;
 
 bool gB_FirstJumpTick[MAXPLAYERS+1];
+bool gB_StartMsg[MAXPLAYERS+1];
 
 public Plugin myinfo =
 {
-	name = "[shavit] First Jump Tick",
+	name = "[shavit] First Jump Tick + Start Hint Msg",
 	author = "Blank & Fixed by Nairda",
 	description = "Print which tick first jump was at",
 	version = "1.1d",
@@ -37,9 +39,12 @@ public void OnPluginStart()
 	RegConsoleCmd("sm_jumptick", Command_FirstJumpTick, "Toggles Jump Tick Printing");
 	RegConsoleCmd("sm_tick", Command_FirstJumpTick, "Toggles Jump Tick Printing");
 	RegConsoleCmd("sm_jt", Command_FirstJumpTick, "Toggles Jump Tick Printing");
+	RegConsoleCmd("sm_msg", Command_Msg, "Toggles Timer start in chat");
+	RegConsoleCmd("sm_startmsg", Command_Msg, "Toggles Timer start in chat");
 
 	gH_FirstJumpTickCookie = RegClientCookie("FJT_enabled", "FJT_enabled", CookieAccess_Protected);
-	gH_CookieSet = RegClientCookie("FJT_default", "FJT_default", CookieAccess_Protected);
+	gH_CookieSet = RegClientCookie("FJT_difault", "FJT_difault", CookieAccess_Protected);
+	gH_MsgCookie = RegClientCookie("MSG_enabled", "MSG_enabled", CookieAccess_Protected);
 
 	for(int i = 1; i <= MaxClients; i++)
 	{
@@ -59,10 +64,14 @@ public void OnClientCookiesCached(int client)
 	{
 		SetCookie(client, gH_FirstJumpTickCookie, false);
 		SetCookie(client, gH_CookieSet, true);
+		SetCookie(client, gH_MsgCookie, true);
 	}
 
 	GetClientCookie(client, gH_FirstJumpTickCookie, sCookie, sizeof(sCookie));
 	gB_FirstJumpTick[client] = view_as<bool>(StringToInt(sCookie));
+
+	GetClientCookie(client, gH_MsgCookie, sCookie, sizeof(sCookie));
+	gB_StartMsg[client] = view_as<bool>(StringToInt(sCookie));
 }
 
 public void Shavit_OnChatConfigLoaded()
@@ -71,21 +80,36 @@ public void Shavit_OnChatConfigLoaded()
 	Shavit_GetChatStrings(sMessageVariable, gS_ChatStrings.sVariable, sizeof(chatstrings_t::sVariable));
 }
 
+public Action Command_Msg(int client, int args)
+{
+	if (client != 0)
+	{
+		gB_StartMsg[client] = !gB_StartMsg[client];
+		SetCookie(client, gH_MsgCookie, gB_StartMsg[client]);
+		Shavit_PrintToChat(client, "Timer start message %s.", gB_StartMsg[client] ? "enabled" : "disabled");
+	}
+	return Plugin_Handled;
+}
+
 public Action Command_FirstJumpTick(int client, int args)
 {
-	if(!gB_FirstJumpTick[client])
+	if (client != 0)
 	{
-		gB_FirstJumpTick[client] = true;
-		SetCookie(client, gH_FirstJumpTickCookie, gB_FirstJumpTick[client]);
-		Shavit_PrintToChat(client, "%T", "FirstJumpTickEnabled", client, gS_ChatStrings.sVariable);
-	}
+		if(!gB_FirstJumpTick[client])
+		{
+			gB_FirstJumpTick[client] = true;
+			SetCookie(client, gH_FirstJumpTickCookie, gB_FirstJumpTick[client]);
+			Shavit_PrintToChat(client, "%T", "FirstJumpTickEnabled", client, gS_ChatStrings.sVariable);
+		}
 
-	else
-	{
-		gB_FirstJumpTick[client] = false;
-		SetCookie(client, gH_FirstJumpTickCookie, gB_FirstJumpTick[client]);
-		Shavit_PrintToChat(client, "%T", "FirstJumpTickDisabled", client, gS_ChatStrings.sVariable);
+		else
+		{
+			gB_FirstJumpTick[client] = false;
+			SetCookie(client, gH_FirstJumpTickCookie, gB_FirstJumpTick[client]);
+			Shavit_PrintToChat(client, "%T", "FirstJumpTickDisabled", client, gS_ChatStrings.sVariable);
+		}
 	}
+	return Plugin_Handled;
 }
 
 public Action OnPlayerJump(Event event, char[] name, bool dontBroadcast)
@@ -106,6 +130,24 @@ public Action OnPlayerJump(Event event, char[] name, bool dontBroadcast)
 	}
 
 	return Plugin_Continue;
+}
+
+public void Shavit_OnLeaveZone(int client, int type, int track, int id, int entity, int data)
+{
+	if(gB_StartMsg[client])
+	{
+		if(type==Zone_Start)
+		{
+			if(Shavit_GetTimerStatus(client) == Timer_Running)
+			{
+				if(Shavit_IsPracticeMode(client))
+					Shavit_PrintToChat(client,"YOU ARE IN PRACTICE MODE!!!");
+
+				else
+					Shavit_PrintToChat(client,"Timer started.");
+			}
+		}
+	}
 }
 
 int GetHUDTarget(int client)

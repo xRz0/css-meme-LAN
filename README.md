@@ -24,6 +24,9 @@
 - sfPlayer
 - KyleS
 - Blank
+- nairda
+- Nira
+- PaxPlay
 
 # Twitch and Wrsj
 To enable Wrsj you need to own a SJ api key ( you can get one from Tony )!
@@ -136,9 +139,9 @@ To enable Wrsj you need to own a SJ api key ( you can get one from Tony )!
 - sm_hideweapon - Toggles weapon hiding.
 - sm_hidewep - Toggles weapon hiding. (alias for sm_hideweapon) 
 - sm_ssj - Open the Speed @ Sixth Jump menu.
-- sm_ssjtop - No description available
-- sm_ssjtopdelete - No description available
-
+- sm_ssjtop - SSJ top menu
+- sm_ssjtopdelete - Delete values from SSJ top
+- sm_msg - Toggles Timer start in chat
 
 ## Seg Commands
 - sm_cpmenu - Opens the checkpoints menu.
@@ -212,7 +215,7 @@ To enable Wrsj you need to own a SJ api key ( you can get one from Tony )!
 - sm_recent - View the recent #1 times set.
 - sm_rr - View the recent #1 times set.
 - sm_recentrecords - View the recent #1 times set. 
-- sm_beam - No description available
+- sm_beam - Ghost Beam Menu
 - sm_keys - Toggles key display.
 - sm_showkeys - Toggles key display. (alias for sm_keys)
 - sm_showmykeys - Toggles key display. (alias for sm_keys)
@@ -267,7 +270,6 @@ To enable Wrsj you need to own a SJ api key ( you can get one from Tony )!
 ## Hud commands:
 - sm_hud - Opens the HUD settings menu.
 - sm_options - Opens the HUD settings menu. (alias for sm_hud)
-- sm_settings - No description available
 - sm_cclist - Print the custom chat setting of all online players.
 - sm_cchelp - Provides help with setting a custom chat name/message color.
 - sm_ccmessage - Toggles/sets a custom chat message color. Usage: sm_ccmessage 'color' or sm_ccmessage "off" to disable.
