@@ -4,6 +4,7 @@
   
 </div>
 
+some nice stuff but also low effort/meme code 
 
 
 ## Peace to ( credits )
