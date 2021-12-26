@@ -27,6 +27,7 @@
 - nairda
 - Nira
 - PaxPlay
+- Thrawn2
 
 # Twitch and Wrsj
 To enable Wrsj you need to own a SJ api key ( you can get one from Tony )!
