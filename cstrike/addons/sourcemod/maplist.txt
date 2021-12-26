@@ -8,7 +8,6 @@ AnubisAxor_area_v1
 BHOP_ItsDark
 Bhop_1st
 Bhop_CopyAndPast
-Bhop_CopyAndPast.bz2
 Bhop_FreedomPuppies_v2
 Bhop_Frighten
 Bhop_GameExe
@@ -300,7 +299,6 @@ bhop_Licityyoi
 bhop_Mampu
 bhop_Mc_Train
 bhop_MiX_v_1
-bhop_MiX%20v.1
 bhop_NamelesS
 bhop_NarKoZzZ
 bhop_NeXoRe
@@ -315,7 +313,6 @@ bhop_Protoz
 bhop_Protoz_2
 bhop_QuiSt_beta
 bhop_QuiSt_final_Dotty
-bhop_QuiSt_final_Dotty_Sand_2.vmf.bz2
 bhop_RAW
 bhop_RAW_fix
 bhop_RAW_nomusic
@@ -711,7 +708,6 @@ bhop_autisticmap_beta1
 bhop_autisticmap_beta2
 bhop_auto_nato_v2
 bhop_auto_omega
-bhop_autobadges%20(1)
 bhop_autobadges
 bhop_autodegr
 bhop_aux_a6-pub
@@ -817,7 +813,6 @@ bhop_badmap
 bhop_badtrip
 bhop_badtrip_final
 bhop_badtrip_v1
-bhop_badtrip_v1.bz2
 bhop_badtrip_v3
 bhop_badtrip_v4
 bhop_baires_cnd_needswork
@@ -835,7 +830,6 @@ bhop_baper_gup
 bhop_barry_pepega
 bhop_basic
 bhop_bathhouse
-bhop_bb_kairi%20(1)
 bhop_bb_kairi
 bhop_bday2
 bhop_beach
@@ -1052,7 +1046,6 @@ bhop_bunnyhopping
 bhop_burp
 bhop_bw
 bhop_byRem2
-bhop_by_oak.bz2
 bhop_bykimchi_d
 bhop_bykimchi_fix
 bhop_byowl
@@ -1138,7 +1131,6 @@ bhop_celltop
 bhop_cerulean
 bhop_cetz
 bhop_cetz_mini_full
-bhop_cewl.bsp
 bhop_cewl
 bhop_cg_arizonabhop_beta
 bhop_cg_arizonabhop_beta4
@@ -1239,7 +1231,6 @@ bhop_coast
 bhop_coast_test1
 bhop_coast_test2
 bhop_cobblestofcuijkw9efn2g4
-bhop_cobblestofcuijkw9efn2g4.bz2
 bhop_cobblestone
 bhop_cobblestone2
 bhop_cobblestone_5xl
@@ -1345,7 +1336,6 @@ bhop_corona326182
 bhop_corona_beta
 bhop_corona_beta1
 bhop_corona_concept
-bhop_corona_jake1%20(1)
 bhop_corona_open_beta
 bhop_corona_open_beta2
 bhop_corridor
@@ -1413,7 +1403,6 @@ bhop_cuteconcrete
 bhop_cutekittenz
 bhop_cutekittenz2
 bhop_cutelittlemap_final2
-bhop_cuteniggers
 bhop_cutepappy
 bhop_cutetraps
 bhop_cw
@@ -1739,9 +1728,7 @@ bhop_easy_ultrafix_v11_fix_opti
 bhop_easyarchitecture_css
 bhop_easycheese
 bhop_easyhop
-bhop_easyhop_benghaziedition%20(2)
 bhop_easyhop_benghaziedition
-bhop_easyhop_benghaziedition.bz2
 bhop_easyhop_cozyedition
 bhop_easyhop_phemnzolgaedition
 bhop_easymode
@@ -1778,7 +1765,6 @@ bhop_eco_zones
 bhop_ecodus
 bhop_edge_re
 bhop_edge_v2
-bhop_edge_v2.bz2
 bhop_edibles_v1
 bhop_edibles_v2
 bhop_edibles_v3
@@ -2139,7 +2125,6 @@ bhop_freedompuppies_large_b3
 bhop_freedompuppies_new
 bhop_freedompuppies_remaster
 bhop_freedompuppies_v2
-bhop_freehop_rc3.3
 bhop_freex
 bhop_fresh
 bhop_frick
@@ -2219,7 +2204,6 @@ bhop_geometrymadness
 bhop_getfucked_v2
 bhop_getgo
 bhop_getontop_hbs
-bhop_getting_started_by_qwer%20(1)
 bhop_getting_started_by_qwer
 bhop_ggaj
 bhop_ghettor0m4n
@@ -2418,7 +2402,6 @@ bhop_heaven_v3
 bhop_heck
 bhop_hedgehog
 bhop_heh
-bhop_height.bsp
 bhop_height
 bhop_heishin
 bhop_hekjlp
@@ -2631,7 +2614,6 @@ bhop_ishouldntbeallowedtousehammer
 bhop_ishouldntbeallowedtousehammer_v2
 bhop_ishouldntbeallowedtousehammer_v3
 bhop_island
-bhop_island_by_miaou.rar
 bhop_island_final
 bhop_island_sr
 bhop_islands
@@ -2857,9 +2839,7 @@ bhop_kz_tryhardkittenz_fix
 bhop_kz_volcano
 bhop_kz_watertemple
 bhop_kz_wtf
-bhop_kz_xc_mg_jb_de_cs_surf_aim_lj_bkz_270%20(2)
 bhop_kz_xc_mg_jb_de_cs_surf_aim_lj_bkz_270
-bhop_kz_xc_mg_jb_de_cs_surf_aim_lj_bkz_270.bz2
 bhop_kz_xc_strafe_acerautism
 bhop_kz_xc_strafe_acerautism1
 bhop_kz_xc_strafe_acerautism_fix_final_v2_end_alpha
@@ -3234,7 +3214,6 @@ bhop_minecraft_jp_v3
 bhop_minecraft_o
 bhop_minecraft_v1
 bhop_minecraft_v1_sr
-bhop_minecraft_winter.bz2
 bhop_mini_ins
 bhop_mini_jumps
 bhop_minigames_final
@@ -3395,7 +3374,6 @@ bhop_nextgen
 bhop_niceday_v2
 bhop_nicetry
 bhop_nicetry2
-bhop_nigger
 bhop_night
 bhop_night_beta2
 bhop_night_hop
@@ -3459,7 +3437,6 @@ bhop_nosotros
 bhop_nostop_v1
 bhop_not_a_defrag_map
 bhop_not_crafting
-bhop_not_dead_world_v2.vmf.bz2
 bhop_not_dejavu
 bhop_not_dejavu_newer
 bhop_not_so_easy
@@ -3472,7 +3449,6 @@ bhop_notkz_earlyspring_playtest
 bhop_nougat
 bhop_nova
 bhop_novice2_final
-bhop_novice_beta.bz2
 bhop_novice_final
 bhop_novice_light
 bhop_novice_pack
@@ -3527,7 +3503,6 @@ bhop_office
 bhop_office_indoors
 bhop_office_indoors_24
 bhop_ofswgok
-bhop_ofswgok.bz2
 bhop_ogel
 bhop_ogle
 bhop_ohboy
@@ -3827,7 +3802,6 @@ bhop_prux
 bhop_psych
 bhop_psyjumps
 bhop_psykeeysss
-bhop_psykeeysss_6a0f8.rar
 bhop_puf
 bhop_puff_zadrot
 bhop_puffs
@@ -3910,7 +3884,6 @@ bhop_ramp_old
 bhop_ramp_v1
 bhop_rampantkittenz
 bhop_rand0m_gm
-bhop_rand0m_gm.rar
 bhop_random
 bhop_random_assortment_of_blocks
 bhop_random_b1
@@ -3928,7 +3901,6 @@ bhop_rat_v2
 bhop_raw
 bhop_raw_is_homo
 bhop_ray-on
-bhop_razisanigger_d
 bhop_rbth
 bhop_real
 bhop_reallycool
@@ -3950,7 +3922,6 @@ bhop_red
 bhop_red_overload
 bhop_red_shade
 bhop_reddy
-bhop_redeye_snow.rmf.bz2
 bhop_redeye_surf
 bhop_redglow
 bhop_redglow_fix
@@ -4176,7 +4147,6 @@ bhop_sequence
 bhop_serenity
 bhop_sergioisc1ool
 bhop_sergioiscool
-bhop_sergioiscool_e61d2.zip
 bhop_series_one
 bhop_series_one_b4
 bhop_serv
@@ -4537,7 +4507,6 @@ bhop_stonework_2
 bhop_stonez
 bhop_stony
 bhop_storm
-bhop_stormy_night.bz2
 bhop_stormy_night_css
 bhop_straa_forest_css
 bhop_straa_space_css
@@ -4758,7 +4727,6 @@ bhop_tetrisroutefuckyou42069
 bhop_teuthida
 bhop_tex
 bhop_texture_fixed
-bhop_texturekill_beta1.1
 bhop_texturekill_beta1_2
 bhop_texturekill_beta1_3
 bhop_texturekill_beta1_3b
@@ -4806,7 +4774,6 @@ bhop_thirdcubed
 bhop_thisisbad0001
 bhop_thomas
 bhop_thop
-bhop_thor_v2_fixed.bsp
 bhop_thor_v2_fixed
 bhop_thp_urban_b3
 bhop_thsisinotwhate
@@ -5061,7 +5028,6 @@ bhop_vse_vishe_vishe_i_vishe
 bhop_vsh
 bhop_w00d
 bhop_wacer
-bhop_wacer_0.5
 bhop_wacer_05
 bhop_waff1e
 bhop_wakoo_b1
@@ -5309,7 +5275,6 @@ cbhop_dom
 cbhop_memedompuppies
 cbhop_shittyvariablenames
 cbhop_sneaker_cbhop_map_cbhop_blue_abstract
-cbhopsneakerkysfaggotcantcode.exe
 cd_flasherhop
 cdddd
 cell_p
@@ -5583,7 +5548,6 @@ ge_desert_temple_a4
 ge_doubledeck
 ge_frigate_mx
 ge_funhouse_v4c
-ge_grid%20(1)
 ge_grid
 ge_grid_classic
 ge_icicle_pyramid_t
@@ -5611,7 +5575,6 @@ gm_flatgrass_classic
 gm_graveyard
 gm_highway14800
 gm_kureigu_construct
-gnk_brickbhop.zip
 goldbhop2
 goldbhop3
 gref
@@ -5663,7 +5626,6 @@ kasoy9
 kz1
 kz_2seasons_spring
 kz_30sec
-kz_11342.bsp
 kz_abstrangel_css
 kz_adv_cursedjourney_v5
 kz_after_agitation_easy_v2
@@ -5898,9 +5860,8 @@ map_NxS
 map_of_pointless_fun
 mariobhops
 megasphere
-mg_50arenas_v1.nav
+mg_50arenas_v1
 mg_100traps_v3
-mg_100traps_v3.nav
 mg_OAKS_cruiseship_v2
 mg_bhop_battle_v3
 mg_ghosts_course_v2_beta_v2
@@ -5916,7 +5877,6 @@ nf_jungle_night_v1
 nf_maintenance_final
 nf_office_v1
 nf_power_v5
-niggerr
 noob
 notbhop_gflchristmas
 notkz_earlyspring_playtest
@@ -6160,7 +6120,6 @@ xc_bhop_mega_gridust
 xc_bhop_myyxtreme
 xc_bhop_myyxtreme_fixed
 xc_bhop_outdoors
-xc_bhop_source%20(1)
 xc_bhop_source
 xc_bhop_source_hard
 xc_bhop_source_sr
@@ -6231,7 +6190,6 @@ xc_dustclimbing_fix_goa
 xc_dustclimbing_fixed
 xc_dustclimbing_fixed1
 xc_dustclimbing_fixed1_timer
-xc_dustclimbing_v1.1
 xc_dustclimbing_v1_1
 xc_easy_dogers_final
 xc_easyclimb
@@ -6363,7 +6321,6 @@ xc_skycastle
 xc_skycastle_timer
 xc_skyparadise
 xc_skyparadise_fix
-xc_skyparadise_v2.1
 xc_skyparadise_v2
 xc_skystorm_v1
 xc_skystorm_v2
