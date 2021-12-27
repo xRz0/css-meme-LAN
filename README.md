@@ -29,6 +29,7 @@ some nice stuff but also low effort/meme code
 - Nira
 - PaxPlay
 - Thrawn2
+- acer
 
 # Twitch and Wrsj
 To enable Wrsj you need to own a SJ api key ( you can get one from Tony )!
