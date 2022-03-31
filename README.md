@@ -104,7 +104,7 @@ To enable Wrsj you need to own a SJ api key ( you can get one from Tony )!
 
 ## Misc Commands:
 - sm_entitymenu - EntityMenu
-- sm_propmenu - PEntityMenu
+- sm_propmenu - EntityMenu
 - sm_propsmenu - EntityMenu
 - sm_props - EntityMenu
 - sm_prop - EntityMenu
