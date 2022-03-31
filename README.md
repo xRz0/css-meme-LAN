@@ -9,26 +9,27 @@ some nice stuff but also low effort/meme code
 
 ## Peace to ( credits )
 
-- shavit
-- GAMMACASE
-- Mehis
-- rumour
-- mev
-- carnifex
-- Eric
-- rtldg
-- ici
-- AlkATraZ
-- rio
-- Haze
-- xen
-- sfPlayer
-- KyleS
-- Blank
-- nairda
-- Nira
-- PaxPlay
-- Thrawn2
+- [shavit](https://github.com/shavitush)
+- [GAMMACASE](https://github.com/GAMMACASE)
+- [Mehis](https://github.com/TotallyMehis)
+- [rumour](https://github.com/rumourA)
+- [mev](https://github.com/3331)
+- [carnifex](https://github.com/hermansimensen)
+- [Eric](https://github.com/ecsr)
+- [Slidy](https://github.com/SlidyBat)
+- [rtldg](https://github.com/rtldg)
+- [ici](https://github.com/1ci)
+- [AlkATraZ](https://github.com/alkatrazbhop)
+- [rio](https://github.com/jason-e)
+- [Haze](https://github.com/Haze1337)
+- [xen](https://github.com/xen-000)
+- [sfPlayer](https://forums.alliedmods.net/member.php?u=33075)
+- [KyleS](https://github.com/KyleSanderson)
+- [Blank](https://github.com/blankbhop)
+- [nairda](https://github.com/Nairdaa)
+- [Nira](https://steamcommunity.com/profiles/76561198039675073)
+- [PaxPlay](https://github.com/PaxPlay)
+- [Thrawn2](https://forums.alliedmods.net/member.php?u=51683)
 - acer
 
 # Twitch and Wrsj
